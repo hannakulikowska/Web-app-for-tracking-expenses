@@ -1,7 +1,5 @@
-# EXPENSEE - a web application for tracking expenses
+# "Expensee" is a new web application being developed for expense tracking. 
 
-Requirements are received for a new web application to be developed named Expensee. You can find them in a __requirements.md__ file.
+The requirements for this application can be found in the "__requirements.md__" file. 
 
-A __checklist.md__ file is created with test scenarios covering the requirements for testing the web application.
-
-Test scenarios are designed relying on my own experience and understanding of the system.
+The "__checklist.md__" file contains a list of test scenarios that cover these requirements and have been designed based on my own experience and understanding of the system.
