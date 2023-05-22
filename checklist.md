@@ -80,6 +80,8 @@ Notes:
 - Is only the Default account pre-filled on the expense record form?
 - Is there a limit on the number of digits allowed after the decimal point when entering the amount?
 - Regarding the requirements, there seems to be a discrepancy between S8 AC4 and S3 AC3. It's necessary to reconcile them and determine the maximum amount allowed, such as -1 000 000 000 000.
+- What notification will be displayed when attempting to enter an expense more than -1 000 000 000 000?
+- Can a specific expense be transferred from one account to another?
 
 # T4. Renaming a category or a subcategory 
 
@@ -148,6 +150,9 @@ Notes:
 1. Verify that an expense account cannot be changed in the bank integration if it is not in the relevant currency with the application.
 1. Verify that an expense record added through integration can be deleted.
 1. Verify that it's impossible to change account for the individual bank expense record (transaction).
+1. Verify that the amount -1 000 000 000 000 can be added as a bank expense record.
+1. Verify that the amount -1 000 000 000 001 cannot be added as a bank expense record.
+1. Verify date&time for the transactions received from the bank.
 
 Notes:
 
