@@ -4,10 +4,10 @@
 1. Verify that an account cannot be created with two currencies selected simultaneously.
 1. Verify that an account cannot be created if the Currency field is left empty.
 1. Verify that an account cannot be created if both the Name and Currency fields are left empty.
-1. Verify the application's behavior on the boundary value of the 0-caracter name length (0, 1, 100, 101 characters). There should be a message that the name field cannot be empty. /Not included in requirements/
-1. Verify the application's behavior on the boundary value of the 1-caracter name length. 
-1. Verify the application's behavior on the boundary value of the 100-caracters name length. 
-1. Verify the application's behavior on the boundary value of the 101-caracters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
+1. Verify the application's behavior on the boundary value of the 0-character name length (0, 1, 100, 101 characters). There should be a message that the name field cannot be empty. /Not included in requirements/
+1. Verify the application's behavior on the boundary value of the 1-character name length. 
+1. Verify the application's behavior on the boundary value of the 100-characters name length. 
+1. Verify the application's behavior on the boundary value of the 101-characters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
 1. Verify that an account can be created with special characters in the name.
 1. Verify that a maximum of 20 accounts can be created.
 1. Verify that 21 accounts cannot be created.
