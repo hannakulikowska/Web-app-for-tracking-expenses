@@ -147,6 +147,7 @@ Notes:
 1. Verify that an expense account can be changed in the bank integration, and all existing transactions will be linked to the latest selected account.
 1. Verify that an expense account cannot be changed in the bank integration if it is not in the relevant currency with the application.
 1. Verify that an expense record added through integration can be deleted.
+1. Verify that it's impossible to change account for the individual bank expense record (transaction).
 
 Notes:
 
@@ -157,7 +158,6 @@ Notes:
 - Provide more details on how bank transactions are retrieved and integrated into the system.
 - Clarify the maximum allowed time for creating expense records in the integration account based on the number of transactions.
 - Clarify the maximum allowed time for creating expense records in 20 integration accounts based on the number of transactions.
-- What is the meaning of "individual bank expense record" in requirement S8 AC8?
 - Can users manually add expense records to an account integrated with a bank?
 - What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
 
