@@ -62,8 +62,8 @@ Notes:
 1. Verify that negative whole numbers can be added as the amount of expenses.
 1. Verify that negative decimal numbers can be added as the amount of expenses. /Question below/
 1. Verify that positive numbers cannot be added as the amount of an expense and they are automatically replaced with negative numbers.
-1. Verify that the amount -1 000 000 000 000 can be added. /Question below/
-1. Verify that the amount -1 000 000 000 001 cannot be added. /Question below/
+1. Verify that the amount -1 000 000 000 000 can be added for each currency. /Question below/
+1. Verify that the amount -1 000 000 000 001 cannot be added for each currency. /Question below/
 1. Verify that the system responds correctly to spaces, dots, or commas when entering the amount. /Not included in requirements/
 1. Verify that the system responds correctly to incorrect amounts entered, such as special characters, letters or a zero at the beginning.
 1. Verify that the pre-filled fields contain the current date and time. /In the Default account only?/
@@ -150,8 +150,8 @@ Notes:
 1. Verify that an expense account cannot be changed in the bank integration if it is not in the relevant currency with the application.
 1. Verify that an expense record added through integration can be deleted.
 1. Verify that it's impossible to change account for the individual bank expense record (transaction).
-1. Verify that the amount -1 000 000 000 000 can be added as a bank expense record.
-1. Verify that the amount -1 000 000 000 001 cannot be added as a bank expense record.
+1. Verify that the amount -1 000 000 000 000 for each currency can be added as a bank expense record.
+1. Verify that the amount -1 000 000 000 001 for each currency cannot be added as a bank expense record.
 1. Verify date&time for the transactions received from the bank.
 
 Notes:
@@ -160,6 +160,7 @@ Notes:
 - Are there any specific requirements or restrictions on the country of the bank for adding integration?
 - How are income records handled in the system? Are they excluded?
 - Clarify the exact time format for the creation of expense records daily at 01.00. Is it 1 pm or 1 am? Is the dot a typo?
+- What is the time zone?
 - Provide more details on how bank transactions are retrieved and integrated into the system.
 - Clarify the maximum allowed time for creating expense records in the integration account based on the number of transactions.
 - Clarify the maximum allowed time for creating expense records in 20 integration accounts based on the number of transactions.
