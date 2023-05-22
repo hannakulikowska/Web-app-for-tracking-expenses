@@ -222,7 +222,7 @@ Notes:
 - When viewing expenses by subcategories, is there a breakdown of expenses displayed in both percentage and total sum?
 - How should the percentages be calculated? Are they whole numbers rounded to the nearest integer value?
 
-# T12. Viewing a pie chart of expenses by categories for a year.
+# T12. Viewing a pie chart of expenses by categories for a year
 
 1. Verify that after switching the period to a year on the Report page, the pie chart and break-down display expenses by categories for the default account for the current year.
 1. Verify that the break-down displays expenses for the current year by categories in both percentage and total sum spent in the specific currency.
