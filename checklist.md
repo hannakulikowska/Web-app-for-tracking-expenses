@@ -68,11 +68,12 @@ Notes:
 1. Verify that the system responds correctly to incorrect amounts entered, such as special characters, letters or a zero at the beginning.
 1. Verify that the pre-filled fields contain the current date and time. /In the Default account only?/
 1. Verify that the time is in the 24h format.
-1. Verify that a future date cannot be added.
-1. Verify the application's behavior on the boundary values of the optional text field (0, 1, 100, 101 characters).
-1. Verify that an existing category can be selected for the expense record.
-1. Verify that the total amount of expenses is correct on the Main page.
-1. Verify that unlimited numbers of expense records can be added. /Not included in requirements/
+2. Verify that it's impossible to set a non-existent date&time. 
+3. Verify that a future date cannot be added.
+4. Verify the application's behavior on the boundary values of the optional text field (0, 1, 100, 101 characters).
+5. Verify that an existing category can be selected for the expense record.
+6. Verify that the total amount of expenses is correct on the Main page.
+7. Verify that unlimited numbers of expense records can be added. /Not included in requirements/
 
 Notes:
 
