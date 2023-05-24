@@ -220,7 +220,7 @@ Notes:
 - Are the category details shown for expenses on the Expenses page?
 - Are users able to switch to previous years on the Expenses page to view expenses for specific months in previous years?
 
-# T13. Viewing a pie chart of expenses by categories for a month
+# T13. Viewing a pie chart of expenses by categories & subcategories for a month
 
 1. Verify that the Report page opens when clicking on "Report" in the menu.
 1. Verify that the pie chart on the Report page displays expenses by categories for the default account for the current month.
@@ -245,7 +245,7 @@ Notes:
 - When viewing expenses by subcategories, is there a breakdown of expenses displayed in both percentage and total sum?
 - How should the percentages be calculated? Are they whole numbers rounded to the nearest integer value?
 
-# T13. Viewing a pie chart of expenses by categories for a year
+# T13. Viewing a pie chart of expenses by categories & subcategories for a year
 
 1. Verify that after switching the period to a year on the Report page, the pie chart and break-down display expenses by categories for the default account for the current year.
 1. Verify that the break-down displays expenses for the current year by categories in both percentage and total sum spent in the specific currency.
