@@ -41,3 +41,6 @@ In this test case, it is unknown what specific actions need to be taken to compl
 Since there are still many questions to clarify based on this version of the user stories, I have decided at this stage to compile a list of what needs to be tested in the web application and a list of questions.
 
 In the assignment, I focused primarily on functional testing. During further testing of the web application, non-functional testing is also conducted, which includes performance, reliability, adaptability and other non-functional aspects of the software system.
+
+#
+Test cases and bug reports for another web application testing project can be seen in [the "Testing To Do List App" repository.](https://github.com/hannakulikowska/Testing-To-Do-List-app)
