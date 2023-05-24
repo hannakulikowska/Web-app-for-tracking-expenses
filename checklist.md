@@ -2,22 +2,18 @@
    
 1. Verify that an account can be created with USD, EUR or BYN currency by clicking the "Add Account" button on the Main page.
 1. Verify that an account cannot be created with two currencies selected simultaneously.
-1. Verify that an account cannot be created if the Currency field is left empty.
-1. Verify that an account cannot be created if both the Name and Currency fields are left empty.
-1. Verify the application's behavior on the boundary value of the 0-character name length (0, 1, 100, 101 characters). There should be a message that the name field cannot be empty. /Not included in requirements/
-1. Verify the application's behavior on the boundary value of the 1-character name length. 
-1. Verify the application's behavior on the boundary value of the 100-characters name length. 
-1. Verify the application's behavior on the boundary value of the 101-characters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
-1. Verify that an account can be created with special characters in the name.
-1. Verify that a maximum of 20 accounts can be created.
-1. Verify that 21 accounts cannot be created.
-1. Verify that an account cannot be marked as Default when there is only one account. /Not included in requirements/
-1. Verify that one of the accounts can be marked as Default when there are at least two accounts. 
-1. Verify that two accounts cannot be marked as Default at the same time.
-1. Verify that the Default account can be changed to another Default account.
-1. Verify that the Default account can be unmarked as Default.
-1. Verify that none of the accounts can be set as Default. /Not included in requirements/
-1. Verify that the currency of an account can be changed to another currency. /Question below/
+4. Verify that an account cannot be created if the Currency field is left empty.
+5. Verify that an account cannot be created if both the Name and Currency fields are left empty.
+6. Verify the application's behavior on the boundary value of the 0-character name length. There should be a message that the name field cannot be empty. /Not included in requirements/
+7. Verify the application's behavior on the boundary value of the 1-character name length. 
+8. Verify the application's behavior on the boundary value of the 100-characters name length. 
+9. Verify the application's behavior on the boundary value of the 101-characters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
+10. Verify that an account can be created with special characters in the name.
+11. Verify that a maximum of 20 accounts can be created.
+12. Verify that 21 accounts cannot be created.
+1. Verify that all created accounts are visible on the Main page.
+2. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
+3. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
 
 Notes:
 
@@ -25,15 +21,32 @@ Notes:
 - How are the accounts sorted on the Main page? Is it possible for users to change the order of the accounts?
 - Can an account be created with a name consisting of only whitespace characters?
 - What error message should be displayed if the account name field is left empty?
-- What should happen if no accounts are marked as Default?
-- Where is the Default account located on the Main page? 
-- Where is the indication that an account is marked as Default?
 - What are the requirements for the exchange rate used to calculate the total amount for accounts in different currencies?
-- There are no requirements regarding the deletion of an account. How should a user delete an account, especially if it has a bank integration?
+- There are no requirements regarding the deletion of an account. How can a user delete an account?
 - How can a user delete an account that has been marked as Default? Are there any specific considerations for this scenario?
 - What are the user registration requirements for the system? What login methods are available (email/phone/social media, etc.)? What information is required for registration (username, password, etc.)? How should the registration process look like?
 
-# T2. Creating categories & sub-categories to differentiate expenses
+# T2. Marking an account as Default
+
+1. Verify that an account cannot be marked as Default when there is only one account. /Not included in requirements/
+4. Verify that one of the accounts can be marked as Default when there are at least two accounts. 
+5. Verify that two accounts cannot be marked as Default at the same time.
+6. Verify that the Default account can be changed to another Default account.
+7. Verify that the Default account can be unmarked as Default.
+8. Verify that none of the accounts can be set as Default. /Not included in requirements/
+
+Notes:
+
+- What should happen if no accounts are marked as Default?
+- Where is the Default account located on the Main page? 
+- Where is the indication that an account is marked as Default?
+
+# T3. Editing an account
+
+1. Verify that the currency of an account can be changed to another currency after saving. /Not included in requirements/
+2. Verify that the account name can be changed after saving. /Not included in requirements/
+
+# T4. Creating categories & sub-categories to differentiate expenses
    
 1. Verify that a category can be created with a name length of 1 character on the Categories page.
 1. Verify that a category can be created with a name length of 50 characters.
@@ -47,16 +60,19 @@ Notes:
 1. Verify that a subcategory can be created with a name length of 50 characters.
 1. Verify that a subcategory cannot be created with a name length of 51 characters.
 1. Verify that a category and subcategory with maximum name length appear correctly.
-1. Verify that categories and sub-categories have unique names.
-1. Verify that all created categories and subcategories are visible on the Categories page. /Not included in requirements/
+1. Verify that categories have unique names.
+2. Verify that sub-categories have unique names.
+3. Verify that category and subcategory can have the same name. /Not included in requirements/
+4. Verify that all created categories and subcategories are visible on the Categories page. /Not included in requirements/
 
 Notes:
 
 - How will the requirement for creating a category with subcategories be implemented? The user stories state that a user can create a category and add a subcategory to an existing category, but the category cannot exist without subcategories. These requirements seem to contradict each other.
 - It is not specified how and where the creation of categories and subcategories should take place.
 
-# T3. Adding expense records
-   
+# T4. Adding expense records
+
+1. Verify that an expense record can be added by clicking the Add Expense button on the Main Page.
 1. Verify that the amount is added in the currency of the account.
 1. Verify that 0 cannot be added as the amount of the expense.
 1. Verify that negative whole numbers can be added as the amount of expenses.
@@ -84,14 +100,14 @@ Notes:
 - What notification will be displayed when attempting to enter an expense more than -1 000 000 000 000?
 - Can a specific expense be transferred from one account to another?
 
-# T4. Renaming a category or a subcategory 
+# T5. Renaming a category or a subcategory 
 
 1. Verify that an existing category can be renamed and latest name will be shown in previous expense records.
 1. Verify that a subcategory can be renamed and latest name will be shown in previous expense records.
 1. Verify that an existing category and subcategory can be renamed and latest names will be shown in previous expense records.
 1. Verify the application's behavior on the boundary values of name field of category and subcategory (0, 1, 50, 51 characters).
 
-# T5. Deleting categories and subcategories
+# T6. Deleting categories and subcategories
 
 1. Verify that an existing category can be deleted if it's subcategories have not been used in previous records.
 1. Verify that when deleting a category with subcategories that were used in records, a pop-up window with the message "Please remove sub-categories first" is displayed. /Question below/
@@ -105,7 +121,7 @@ Notes:
 - How can users identify which subcategories can be deleted if there are a large number of subcategories and it's challenging to find the specific ones?
 - What message should appear when attempting to delete a subcategory that has been used in expense records?
 
-# T6. Updating an existing expense record
+# T7. Updating an existing expense record
 
 1. Verify that the account, amount, category (?), subcategory, date & time and note of an existing expense record can be edited. /Question below/
 1. Verify that after editing an expense record, the total expense amounts for accounts are recalculated and updated across the system.
@@ -115,12 +131,12 @@ Notes:
 - Can a user edit a category?
 - What happens to the existing expense records associated with a category when it is edited?
 
-# T7. Deleting an existing expense record
+# T8. Deleting an existing expense record
 
 1. Verify that an existing expense record can be successfully deleted.
 1. Verify that after deleting an expense record, the total amount of expenses is recalculated and updated accordingly.
 
-# T8. Integration with a bank account to automatically add expense records based on transactions
+# T9. Integration with a bank account to automatically add expense records based on transactions
 
 1. Verify that integration with BANK1 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
 1. Verify that integration with BANK2 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
@@ -168,7 +184,7 @@ Notes:
 - Can users manually add expense records to an account integrated with a bank?
 - What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
 
-# T9. Deleting an integration with a bank account
+# T10. Deleting an integration with a bank account
 
 1. Verify that a specific bank account in the bank integration can be selected and deleted.
 1. Verify that all bank accounts in the bank integration can be deleted.
@@ -180,11 +196,9 @@ Note:
 - Is it possible for a user to select and delete all bank accounts in the bank integrations simultaneously?
 - How should an expense account with a bank integration be deleted? What steps should be followed?
 
-# T10. Viewing expenses
+# T11. Viewing expenses
 
-1. Verify that all created accounts are visible on the Main page.
 1. Verify that recent expense records are visible on the Main page. /Question below/
-1. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
 1. Verify that an expense record can be added by clicking the Add Expense button on the Main Page.
 1. Verify that there amount, category (?), subcategory, note and date&time for each expense on the Expenses page. /Question below/
 1. Verify that all expenses for the current month are displayed on the Expenses page.
@@ -204,7 +218,7 @@ Notes:
 - Are the category details shown for expenses on the Expenses page?
 - Are users able to switch to previous years on the Expenses page to view expenses for specific months in previous years?
 
-# T11. Viewing a pie chart of expenses by categories for a month
+# T12. Viewing a pie chart of expenses by categories for a month
 
 1. Verify that the Report page opens when clicking on "Report" in the menu.
 1. Verify that the pie chart on the Report page displays expenses by categories for the default account for the current month.
@@ -229,7 +243,7 @@ Notes:
 - When viewing expenses by subcategories, is there a breakdown of expenses displayed in both percentage and total sum?
 - How should the percentages be calculated? Are they whole numbers rounded to the nearest integer value?
 
-# T12. Viewing a pie chart of expenses by categories for a year
+# T13. Viewing a pie chart of expenses by categories for a year
 
 1. Verify that after switching the period to a year on the Report page, the pie chart and break-down display expenses by categories for the default account for the current year.
 1. Verify that the break-down displays expenses for the current year by categories in both percentage and total sum spent in the specific currency.
