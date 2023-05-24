@@ -70,7 +70,28 @@ Notes:
 - How will the requirement for creating a category with subcategories be implemented? The user stories state that a user can create a category and add a subcategory to an existing category, but the category cannot exist without subcategories. These requirements seem to contradict each other.
 - It is not specified how and where the creation of categories and subcategories should take place.
 
-# T4. Adding expense records
+# T5. Renaming a category or a subcategory 
+
+1. Verify that an existing category can be renamed and latest name will be shown in previous expense records.
+1. Verify that a subcategory can be renamed and latest name will be shown in previous expense records.
+1. Verify that an existing category and subcategory can be renamed and latest names will be shown in previous expense records.
+1. Verify the application's behavior on the boundary values of name field of category and subcategory (0, 1, 50, 51 characters).
+
+# T6. Deleting categories and subcategories
+
+1. Verify that an existing category can be deleted if it's subcategories have not been used in previous records.
+1. Verify that when deleting a category with subcategories that were used in records, a pop-up window with the message "Please remove sub-categories first" is displayed. /Question below/
+1. Verify that an existing subcategory can be deleted if it has not been used in previous records.
+1. Verify that when deleting a subcategory that was used in records, a pop-up window with a message is displayed. /Question below/
+1. Verify that another subcategory can be selected when deleting a subcategory that was used in records.
+
+Notes:
+
+- If a category cannot exist without subcategories, how can all subcategories be deleted if the category needs to remain?
+- How can users identify which subcategories can be deleted if there are a large number of subcategories and it's challenging to find the specific ones?
+- What message should appear when attempting to delete a subcategory that has been used in expense records?
+
+# T7. Adding expense records
 
 1. Verify that an expense record can be added by clicking the Add Expense button on the Main Page.
 1. Verify that the amount is added in the currency of the account.
@@ -99,29 +120,9 @@ Notes:
 - Regarding the requirements, there seems to be a discrepancy between S8 AC4 and S3 AC3. It's necessary to reconcile them and determine the maximum amount allowed, such as -1 000 000 000 000.
 - What notification will be displayed when attempting to enter an expense more than -1 000 000 000 000?
 - Can a specific expense be transferred from one account to another?
+- Is there a dedicated option to add an expense record on the Expenses page?
 
-# T5. Renaming a category or a subcategory 
-
-1. Verify that an existing category can be renamed and latest name will be shown in previous expense records.
-1. Verify that a subcategory can be renamed and latest name will be shown in previous expense records.
-1. Verify that an existing category and subcategory can be renamed and latest names will be shown in previous expense records.
-1. Verify the application's behavior on the boundary values of name field of category and subcategory (0, 1, 50, 51 characters).
-
-# T6. Deleting categories and subcategories
-
-1. Verify that an existing category can be deleted if it's subcategories have not been used in previous records.
-1. Verify that when deleting a category with subcategories that were used in records, a pop-up window with the message "Please remove sub-categories first" is displayed. /Question below/
-1. Verify that an existing subcategory can be deleted if it has not been used in previous records.
-1. Verify that when deleting a subcategory that was used in records, a pop-up window with a message is displayed. /Question below/
-1. Verify that another subcategory can be selected when deleting a subcategory that was used in records.
-
-Notes:
-
-- If a category cannot exist without subcategories, how can all subcategories be deleted if the category needs to remain?
-- How can users identify which subcategories can be deleted if there are a large number of subcategories and it's challenging to find the specific ones?
-- What message should appear when attempting to delete a subcategory that has been used in expense records?
-
-# T7. Updating an existing expense record
+# T8. Updating an existing expense record
 
 1. Verify that the account, amount, category (?), subcategory, date & time and note of an existing expense record can be edited. /Question below/
 1. Verify that after editing an expense record, the total expense amounts for accounts are recalculated and updated across the system.
@@ -131,12 +132,15 @@ Notes:
 - Can a user edit a category?
 - What happens to the existing expense records associated with a category when it is edited?
 
-# T8. Deleting an existing expense record
+# T9. Deleting an existing expense record
 
 1. Verify that an existing expense record can be successfully deleted.
 1. Verify that after deleting an expense record, the total amount of expenses is recalculated and updated accordingly.
 
-# T9. Integration with a bank account to automatically add expense records based on transactions
+Notes:
+- Where are the options to edit and delete expense records located? How are they visually represented? What fields can be edited?
+
+# T10. Integration with a bank account to automatically add expense records based on transactions
 
 1. Verify that integration with BANK1 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
 1. Verify that integration with BANK2 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
@@ -156,8 +160,8 @@ Notes:
 1. Verify that subcategories are automatically and correctly added for expense records from a bank integration.
 1. Verify that subcategories are correctly integrated with previously created subcategories before integrating with the bank account.
 1. Verify that the time of creating expense records meets the requirements. /Question below/
-1. Verify that all bank integrations are visible on the Bank integrations page. /Not added to requirements/
-1. Verify that a category can be edited for bank expense records. /Not added to requirements/
+1. Verify that all bank integrations are visible on the Bank integrations page. /Not included in requirements/
+1. Verify that a category can be edited for bank expense records. /Not included in requirements/
 1. Verify that a subcategory can be edited for bank expense records.
 1. Verify that amount can be edited for bank expense records.
 1. Verify that date&time can be edited for bank expense records.
@@ -184,7 +188,7 @@ Notes:
 - Can users manually add expense records to an account integrated with a bank?
 - What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
 
-# T10. Deleting an integration with a bank account
+# T11. Deleting an integration with a bank account
 
 1. Verify that a specific bank account in the bank integration can be selected and deleted.
 1. Verify that all bank accounts in the bank integration can be deleted.
@@ -196,29 +200,27 @@ Note:
 - Is it possible for a user to select and delete all bank accounts in the bank integrations simultaneously?
 - How should an expense account with a bank integration be deleted? What steps should be followed?
 
-# T11. Viewing expenses
+# T12. Viewing expenses
 
-1. Verify that recent expense records are visible on the Main page. /Question below/
-1. Verify that an expense record can be added by clicking the Add Expense button on the Main Page.
-1. Verify that there amount, category (?), subcategory, note and date&time for each expense on the Expenses page. /Question below/
-1. Verify that all expenses for the current month are displayed on the Expenses page.
-1. Verify that Month and Year options are available to select previous periods of expenses on the Expenses page.
-1. Verify that it is not possible to select future periods of expenses.
-1. Verify that it is possible to edit an expense record by clicking Edit.
-1. Verify that it is possible to delete an expense record by clicking Delete.
-1. Verify that it is possible to delete all expense records.
+1. Verify that it's possible to go to the Expenses page by clicking on the account.
+2. Verify that it's possible to go to the Expenses page by clicking the Expenses page on the menu. /Not included in requirements/
+3. Verify that there amount, category (?), subcategory, note and date&time for each expense on the Expenses page. /Question below/
+4. Verify that all expenses for the current month are displayed on the Expenses page.
+5. Verify that Month and Year (?) options are available to select previous periods of expenses on the Expenses page. /Question below/
+6. Verify that it is not possible to select future periods of expenses.
+7. Verify that it is possible to edit an expense record by clicking Edit.
+8. Verify that it is possible to delete an expense record by clicking Delete.
+9. Verify that it is possible to delete all expense records.
 
 Notes:
 
-- How many expense records are displayed on the Main page? Is there a limit or pagination?
-- Where are the options to edit and delete expense records located? How are they visually represented? What fields can be edited?
-- Is there a dedicated option to add an expense record on the Expenses page?
+- Are expense recordes displayed on the Main page? How many expense records are displayed on the Main page? Is there a limit or pagination?
 - How does a user navigate to an account's Expenses page? Is it by clicking on the account card?
 - Is the Expenses page accessible from the application menu?
 - Are the category details shown for expenses on the Expenses page?
 - Are users able to switch to previous years on the Expenses page to view expenses for specific months in previous years?
 
-# T12. Viewing a pie chart of expenses by categories for a month
+# T13. Viewing a pie chart of expenses by categories for a month
 
 1. Verify that the Report page opens when clicking on "Report" in the menu.
 1. Verify that the pie chart on the Report page displays expenses by categories for the default account for the current month.
