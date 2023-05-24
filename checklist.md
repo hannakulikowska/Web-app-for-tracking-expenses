@@ -198,7 +198,7 @@ Notes:
 1. Verify that all created expense records can be retained during integration removal.
 1. Verify that all created expense records can be deleted during integration removal.
 
-Note:
+Notes:
 
 - Is it possible for a user to select and delete all bank accounts in the bank integrations simultaneously?
 - How should an expense account with a bank integration be deleted? What steps should be followed?
