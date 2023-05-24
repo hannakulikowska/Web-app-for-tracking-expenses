@@ -124,6 +124,7 @@ Notes:
 
 # T8. Updating an existing expense record
 
+1. Verify that it is possible to edit an expense record by clicking Edit.
 1. Verify that the account, amount, category (?), subcategory, date & time and note of an existing expense record can be edited. /Question below/
 1. Verify that after editing an expense record, the total expense amounts for accounts are recalculated and updated across the system.
 
@@ -134,10 +135,12 @@ Notes:
 
 # T9. Deleting an existing expense record
 
-1. Verify that an existing expense record can be successfully deleted.
+1. Verify that it is possible to delete an expense record by clicking Delete.
+1. Verify that it is possible to delete all expense records.
 1. Verify that after deleting an expense record, the total amount of expenses is recalculated and updated accordingly.
 
 Notes:
+
 - Where are the options to edit and delete expense records located? How are they visually represented? What fields can be edited?
 
 # T10. Integration with a bank account to automatically add expense records based on transactions
@@ -208,9 +211,6 @@ Note:
 4. Verify that all expenses for the current month are displayed on the Expenses page.
 5. Verify that Month and Year (?) options are available to select previous periods of expenses on the Expenses page. /Question below/
 6. Verify that it is not possible to select future periods of expenses.
-7. Verify that it is possible to edit an expense record by clicking Edit.
-8. Verify that it is possible to delete an expense record by clicking Delete.
-9. Verify that it is possible to delete all expense records.
 
 Notes:
 
