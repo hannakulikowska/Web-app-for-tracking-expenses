@@ -6,7 +6,7 @@ The "__checklist.md__" file contains a list of test scenarios that cover these r
 
 
 ### Description:
-While completing the task, I followed the principle of creating test scenarios based on the requirements. In my understanding, test scenarios include test cases, which, in turn, consist of an ID, a name, steps, input data and expected result. An example test case is provided below:
+While completing the task, I followed the principle of creating test scenarios based on the requirements. In my understanding, test scenarios include test cases, which, in turn, consist of an ID, a name, preconditions, steps, input data and expected result. An example test case is provided below:
 
 ```
 Test Scenario 1: Account creation to track expenses.
