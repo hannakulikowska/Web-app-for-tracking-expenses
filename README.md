@@ -38,7 +38,7 @@ Account with a valid name in a specific currency is created.
 
 In this test case, it is unknown what specific actions need to be taken to complete steps 2 and 4. Additionally, it is unknown in which browsers and on which devices the application will be tested.
 
-Since there are still many questions to clarify based on this version of the user stories, I have decided at this stage to compile a list of what needs to be tested in the web application and a list of questions.
+Since there are still many questions to clarify based on this version of the user stories, I have decided at this stage to compile a list of what needs to be tested in the web application and a list of questions. I believe it is appropriate to test the documentation for the completeness of the requirements description.
 
 In the assignment, I focused primarily on functional testing. During further testing of the web application, non-functional testing is also conducted, which includes performance, reliability, adaptability and other non-functional aspects of the software system.
 
