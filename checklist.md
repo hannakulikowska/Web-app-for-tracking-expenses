@@ -143,7 +143,7 @@ Notes:
 
 - Where are the options to edit and delete expense records located? How are they visually represented? What fields can be edited?
 
-# T10. Integration with a bank account to automatically add expense records based on transactions
+# T10. Integration an account with a bank account
 
 1. Verify that integration with BANK1 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
 1. Verify that integration with BANK2 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
@@ -156,27 +156,36 @@ Notes:
 1. Verify that expense accounts have the same currency as the integrated bank accounts.
 1. Verify that integration with BANK1 and/or BANK2 cannot be added if the currency is not relevant to the application.
 1. Verify that integration of the same expense account with BANK1 and BANK2 simultaneously is not possible, even if the currencies are the same (USD, EUR, or BYN).
+
+# T11. Adding expense records to the account integrated with a bank account
+
 1. Verify that expense records are created for transactions with negative amounts.
-1. Verify that income records from a bank account are not included in the application.
-1. Verify that expense records are created starting from the day of adding the bank integration.
-1. Verify that expense records are created daily at 01:00 for transactions from the previous day. /Question below/
-1. Verify that subcategories are automatically and correctly added for expense records from a bank integration.
-1. Verify that subcategories are correctly integrated with previously created subcategories before integrating with the bank account.
-1. Verify that the time of creating expense records meets the requirements. /Question below/
-1. Verify that all bank integrations are visible on the Bank integrations page. /Not included in requirements/
+4. Verify that income records from a bank account are not included in the application.
+5. Verify that expense records are created starting from the day of adding the bank integration.
+6. Verify that expense records are created daily at 01:00 for transactions from the previous day. /Question below/
+7. Verify that subcategories are automatically and correctly added for expense records from a bank integration.
+8. Verify that subcategories are correctly integrated with previously created subcategories before integrating with the bank account.
+9. Verify that the time of creating expense records meets the requirements. /Question below/
+10. Verify that the amount -1 000 000 000 000 for each currency can be added as a bank expense record.
+13. Verify that the amount -1 000 000 000 001 for each currency cannot be added as a bank expense record.
+14. Verify date&time for the transactions received from the bank.
+
+# T12. Updating expense records in the account integrated with a bank 
+
 1. Verify that a category can be edited for bank expense records. /Not included in requirements/
 1. Verify that a subcategory can be edited for bank expense records.
-1. Verify that amount can be edited for bank expense records.
-1. Verify that date&time can be edited for bank expense records.
-1. Verify that note can be edited for bank expense records.
-1. Verify that the total amount of expenses is correct.
-1. Verify that an expense account can be changed in the bank integration, and all existing transactions will be linked to the latest selected account.
-1. Verify that an expense account cannot be changed in the bank integration if it is not in the relevant currency with the application.
+2. Verify the application's behavior on the boundary values of name fields of category and subcategory (0, 1, 50, 51 characters) in the process of editing.
+3. Verify that amount can be edited for bank expense records.
+4. Verify that date&time can be edited for bank expense records.
+5. Verify that note can be edited for bank expense records.
+6. Verify that the total amount of expenses is correct.
+7. Verify that it's impossible to change account for the bank expense record (transaction).
+
+# T13. Deleting expense records from the account integrated with a bank
+
 1. Verify that an expense record added through integration can be deleted.
-1. Verify that it's impossible to change account for the individual bank expense record (transaction).
-1. Verify that the amount -1 000 000 000 000 for each currency can be added as a bank expense record.
-1. Verify that the amount -1 000 000 000 001 for each currency cannot be added as a bank expense record.
-1. Verify date&time for the transactions received from the bank.
+1. Verify that selected expense records can be deleted. /Not included in requirements/
+2. Verify that all expense records can be deleted. /Not included in requirements/
 
 Notes:
 
@@ -190,8 +199,18 @@ Notes:
 - Clarify the maximum allowed time for creating expense records in 20 integration accounts based on the number of transactions.
 - Can users manually add expense records to an account integrated with a bank?
 - What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
+- The requirement S8 AC8 "User can’t update account for the individual bank expense record." has an ambigious meaning.
 
-# T11. Deleting an integration with a bank account
+# T14. Updating an account integrated with a bank account
+
+1. Verify that an expense account can be changed in the bank integration, and all existing transactions will be linked to the latest selected account.
+1. Verify that an expense account cannot be changed in the bank integration if it is not in the relevant currency with the application.
+
+Notes:
+
+- The requirement S8 AC9 "All existing transactions will be linked to the latest selected account." has an ambigious meaning.
+
+# T15. Deleting an integration with a bank account
 
 1. Verify that a specific bank account in the bank integration can be selected and deleted.
 1. Verify that all bank accounts in the bank integration can be deleted.
@@ -203,7 +222,7 @@ Notes:
 - Is it possible for a user to select and delete all bank accounts in the bank integrations simultaneously?
 - How should an expense account with a bank integration be deleted? What steps should be followed?
 
-# T12. Viewing expenses
+# T16. Viewing expenses
 
 1. Verify that it's possible to go to the Expenses page by clicking on the account.
 2. Verify that it's possible to go to the Expenses page by clicking the Expenses page on the menu. /Not included in requirements/
@@ -220,7 +239,11 @@ Notes:
 - Are the category details shown for expenses on the Expenses page?
 - Are users able to switch to previous years on the Expenses page to view expenses for specific months in previous years?
 
-# T13. Viewing a pie chart of expenses by categories & subcategories for a month
+# T17. Viewing bank integrations
+
+1. Verify that all bank integrations are visible on the Bank integrations page. /Not included in requirements/
+
+# T18. Viewing a pie chart of expenses by categories & subcategories for a month
 
 1. Verify that the Report page opens when clicking on "Report" in the menu.
 1. Verify that the pie chart on the Report page displays expenses by categories for the default account for the current month.
@@ -245,7 +268,7 @@ Notes:
 - When viewing expenses by subcategories, is there a breakdown of expenses displayed in both percentage and total sum?
 - How should the percentages be calculated? Are they whole numbers rounded to the nearest integer value?
 
-# T14. Viewing a pie chart of expenses by categories & subcategories for a year
+# T19. Viewing a pie chart of expenses by categories & subcategories for a year
 
 1. Verify that after switching the period to a year on the Report page, the pie chart and break-down display expenses by categories for the default account for the current year.
 1. Verify that the break-down displays expenses for the current year by categories in both percentage and total sum spent in the specific currency.
