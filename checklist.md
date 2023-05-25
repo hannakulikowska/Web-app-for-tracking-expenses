@@ -143,7 +143,7 @@ Notes:
 
 - Where are the options to edit and delete expense records located? How are they visually represented? What fields can be edited?
 
-# T10. Integration an account with a bank account
+# T10. Bank account integration with an expense account 
 
 1. Verify that integration with BANK1 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
 1. Verify that integration with BANK2 can be added by clicking "Add new bank integration" on the Bank integration page and successfully authorizing the account.
@@ -157,18 +157,34 @@ Notes:
 1. Verify that integration with BANK1 and/or BANK2 cannot be added if the currency is not relevant to the application.
 1. Verify that integration of the same expense account with BANK1 and BANK2 simultaneously is not possible, even if the currencies are the same (USD, EUR, or BYN).
 
+Notes:
+
+- Is the option "Add new bank integration" presented as a button?
+- Are there any specific requirements or restrictions on the country of the bank for adding integration?
+- Clarify the exact time format for the creation of expense records daily at 01.00. Is it 1 pm or 1 am? Is the dot a typo?
+- What is the time zone?
+- What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
+
 # T11. Adding expense records to the account integrated with a bank account
 
-1. Verify that expense records are created for transactions with negative amounts.
-4. Verify that income records from a bank account are not included in the application.
-5. Verify that expense records are created starting from the day of adding the bank integration.
+1. Verify that expense records are created starting from the day of adding the bank integration.
 6. Verify that expense records are created daily at 01:00 for transactions from the previous day. /Question below/
 7. Verify that subcategories are automatically and correctly added for expense records from a bank integration.
 8. Verify that subcategories are correctly integrated with previously created subcategories before integrating with the bank account.
-9. Verify that the time of creating expense records meets the requirements. /Question below/
-10. Verify that the amount -1 000 000 000 000 for each currency can be added as a bank expense record.
+9. Verify date&time for the transactions received from the bank.
+10. Verify that expense records are created for transactions with negative amounts.
+11. Verify that the amount -1 000 000 000 000 for each currency can be added as a bank expense record.
 13. Verify that the amount -1 000 000 000 001 for each currency cannot be added as a bank expense record.
-14. Verify date&time for the transactions received from the bank.
+13. Verify that income records from a bank account are not included in the application.
+14. Verify that the time of creating expense records meets the requirements. /Not included in requirements/
+
+Notes:
+
+- How are income records handled in the system? Are they excluded?
+- Provide more details on how bank transactions are retrieved and integrated into the system.
+- Clarify the maximum allowed time for creating expense records in the integration account based on the number of transactions.
+- Clarify the maximum allowed time for creating expense records in 20 integration accounts based on the number of transactions.
+- Can users manually add expense records to an account integrated with a bank?
 
 # T12. Updating expense records in the account integrated with a bank 
 
@@ -181,25 +197,15 @@ Notes:
 6. Verify that the total amount of expenses is correct.
 7. Verify that it's impossible to change account for the bank expense record (transaction).
 
+Notes:
+
+- The requirement S8 AC8 "User can’t update account for the individual bank expense record." has an ambigious meaning.
+
 # T13. Deleting expense records from the account integrated with a bank
 
 1. Verify that an expense record added through integration can be deleted.
 1. Verify that selected expense records can be deleted. /Not included in requirements/
 2. Verify that all expense records can be deleted. /Not included in requirements/
-
-Notes:
-
-- Is the option "Add new bank integration" presented as a button?
-- Are there any specific requirements or restrictions on the country of the bank for adding integration?
-- How are income records handled in the system? Are they excluded?
-- Clarify the exact time format for the creation of expense records daily at 01.00. Is it 1 pm or 1 am? Is the dot a typo?
-- What is the time zone?
-- Provide more details on how bank transactions are retrieved and integrated into the system.
-- Clarify the maximum allowed time for creating expense records in the integration account based on the number of transactions.
-- Clarify the maximum allowed time for creating expense records in 20 integration accounts based on the number of transactions.
-- Can users manually add expense records to an account integrated with a bank?
-- What is the contingency plan if a bank encounters technical issues preventing the creation of expense records at 01:00?
-- The requirement S8 AC8 "User can’t update account for the individual bank expense record." has an ambigious meaning.
 
 # T14. Updating an account integrated with a bank account
 
