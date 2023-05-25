@@ -291,4 +291,4 @@ Notes:
 
 #
 
-I believe it is necessary to refine the structure of the requirements - the order of describing the requirements and provide detailed descriptions for all buttons and field names. The documentation doesn't provide information about the consequences if the user fails to perform the required actions.
+I believe it is necessary to refine the structure of the requirements - the order of describing the requirements and provide detailed descriptions for all buttons and names. The documentation doesn't provide information about the consequences if the user fails to perform the required actions.
