@@ -259,3 +259,7 @@ Notes:
 1. Verify that the sum of all percentages for the year's expenses equals 100%.
 1. Verify that clicking on a selected category displays expenses by subcategories for the current year.
 1. Verify that clicking on a selected category displays expenses by subcategories for selected year.
+
+#
+
+I believe it is necessary to refine the structure of the requirements - the order of describing the requirements and provide detailed descriptions for all buttons and field names. The documentation doesn't provide information about the consequences if the user fails to perform the required actions.
