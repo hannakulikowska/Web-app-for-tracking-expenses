@@ -4,20 +4,30 @@
 1. Verify that an account cannot be created with two currencies selected simultaneously.
 4. Verify that an account cannot be created if the Currency field is left empty.
 5. Verify that an account cannot be created if both the Name and Currency fields are left empty.
-6. Verify the application's behavior on the boundary value of the 0-character name length. There should be a message that the name field cannot be empty. /Not included in requirements/
-7. Verify the application's behavior on the boundary value of the 1-character name length. 
-8. Verify the application's behavior on the boundary value of the 100-characters name length. 
-9. Verify the application's behavior on the boundary value of the 101-characters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
-10. Verify that an account can be created with special characters in the name.
-11. Verify that a maximum of 20 accounts can be created.
-12. Verify that 21 accounts cannot be created.
-1. Verify that all created accounts are visible on the Main page.
-2. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
-3. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
+6. Verify that system generates a validation message when clicking on submit button without filling all the mandatory fields.
+7. Verify the application's behavior on the boundary value of the 0-character name length. There should be a message that the name field cannot be empty. /Not included in requirements/
+8. Verify that entering blank spaces on mandatory fields lead to validation error. /Not included in requirements/
+9. Verify that the name can be created in a case-insensitive manner. /Not included in requirements/
+10. Verify the application's behavior on the boundary value of the 1-character name length. 
+11. Verify the application's behavior on the boundary value of the 100-characters name length. 
+12. Verify the application's behavior on the boundary value of the 101-characters name length. There should be a message that the name field cannot be more than 100 chars. /Not included in requirements/
+13. Verify that an account can be created with special characters in the name.
+14. Verify that a maximum of 20 accounts can be created.
+15. Verify that 21 accounts cannot be created.
+16. Verify that all created accounts are visible on the Main page.
+17. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
+18. Verify that account name, currency and total amount spent (negative number) in the current month are shown for each account on the Main page.
+19. Verify that Tab functionality is working properly. /Not included in requirements/
+20. Verify that Enter key works as a substitute for the submit button. /Not included in requirements/
+21. Verify that all the fields such as Name have a valid placeholder. /Not included in requirements/
+22. Verify that all the mandatory fields are marked with * against the field. /Not included in requirements/
+23. Verify that clicking on submit button after entering all the mandatory fields, submits the data to the server.
+24. Verify that system generates a validation message when entering existing name. /Not included in requirements/
+25. Verify that leading and trailing spaces in the Name field are trimmed after clicking on submit button. /Not included in requirements/
 
 Notes:
 
-- Should account names be unique? Test by creating two accounts with the same name.
+- Should account names be unique? Test by creating two accounts with the same name. 
 - How are the accounts sorted on the Main page? Is it possible for users to change the order of the accounts?
 - Can an account be created with a name consisting of only whitespace characters?
 - What error message should be displayed if the account name field is left empty?
@@ -25,6 +35,7 @@ Notes:
 - There are no requirements regarding the deletion of an account. How can a user delete an account?
 - How can a user delete an account that has been marked as Default? Are there any specific considerations for this scenario?
 - What are the user registration requirements for the system? What login methods are available (email/phone/social media, etc.)? What information is required for registration (username, password, etc.)? How should the registration process look like?
+- It should also be tested "Terms and Conditions" and cookies.
 
 # T2. Marking an account as Default
 
@@ -292,3 +303,4 @@ Notes:
 #
 
 I believe it is necessary to refine the structure of the requirements - the order of describing the requirements and provide detailed descriptions for all buttons, names, notifications, error messanges. The documentation doesn't provide information about the consequences if the user fails to perform the required actions.
+
